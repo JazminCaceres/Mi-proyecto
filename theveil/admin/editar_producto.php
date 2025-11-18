@@ -138,7 +138,7 @@ if ($_POST) {
       <div class="current-image">
         <label>Imagen Actual</label>
         <?php if ($prod['image']): ?>
-            <img src="../<?= htmlspecialchars($prod['image']) ?>"
+            <img src="../<?=  htmlspecialchars($prod['image']) ?>"
                 alt="Imagen actual"
                 onerror="this.src='../assets/img/placeholder.jpg'; this.onerror=null;"
                 style="max-width: 200px;"/>

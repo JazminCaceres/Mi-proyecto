@@ -135,7 +135,7 @@ $products = $product->searchAndFilter($search, $category, $order_by);
                   </td>
                   <td>
                     <a href="editar_producto.php?id=<?php echo $p['id']; ?>" class="btn-secondary" style="margin-right:5px;">✏️ Editar</a>
-                    <a href="elimiar_producto.php?id=<?php echo $p['id']; ?>" class="btn-danger" onclick="return confirDelete(event)" >🗑️ Eliminar</a>
+                    <a href="eliminar_producto.php?id=<?php echo $p['id']; ?>" class="btn-danger" onclick="return confirmDelete(event)" >🗑️ Eliminar</a>
                   </td>
                 </tr>
               <?php endforeach; ?>
