@@ -1,8 +1,8 @@
 <?php
 // admin/login.php
-
-// No necesitamos requireAdminLogin() aquí, porque estamos en la pantalla de login
-require_once '../includes/auth.php';
+require_once '../classes/Auth.php';
+require_once '../classes/user.php';
+require_once '../classes/Database.php';
 
 // Si ya está logueado, redirige al dashboard
 if (Auth::isLoggedIn()) {
@@ -17,9 +17,6 @@ if ($_POST) {
     $password = $_POST['password'];
 
     try {
-        require_once '../config/Database.php';
-        require_once '../classes/User.php';
-
         $pdo = (new Database())->getConnection();
         $user = new User($pdo);
         $admin = $user->findByEmail($email);
@@ -47,7 +44,8 @@ if ($_POST) {
 </head>
 <body class="login-body">
 
-  <!-- Solo mostramos el formulario, sin header ni footer completo -->
+  <?php include '../includes/admin_header.php'; ?>
+
   <div class="login-container">
     <div class="brand">
       <h2>The Veil Admin</h2>
@@ -75,12 +73,9 @@ if ($_POST) {
         <input type="password" name="password" required />
       </div>
       <button type="submit" class="btn-primary">Ingresar</button>
-      <!-- Botón para volver al sitio público -->
-      <a href="../index.php" class="btn-secondary" style="margin-top: 20px; display: inline-block;">
-          ← Volver al Sitio Público
-      </a>
     </form>
   </div>
 
+  <?php include '../includes/admin_footer.php'; ?>
 </body>
 </html>
