@@ -1,0 +1,20 @@
+-- Crear la base de datos
+CREATE DATABASE IF NOT EXISTS login_db
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_0900_ai_ci;
+
+
+USE login_db;
+
+-- Crear la tabla de usuarios
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
+    contrasena VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Insertar usuario 
+-- Usuario: admin
+-- Contraseña: password
+INSERT INTO usuarios (usuario, contrasena) 
+VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
