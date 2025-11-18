@@ -47,12 +47,13 @@ class Appointment {
         ]);
     }
 
-    /**
-     * Actualiza el estado de una cita
-     */
-    public function updateStatus($id, $estado) {
-        $stmt = $this->pdo->prepare("UPDATE appointments SET estado = ? WHERE id = ?");
-        return $stmt->execute([$estado, $id]);
-    }
+    
+     //* Actualiza el estado de una cita
+     // classes/Appointment.php
+        public function updateStatus($id, $estado) {
+            $sql = "UPDATE appointments SET estado = ? WHERE id = ?";
+            $stmt = $this->pdo->prepare($sql);
+            return $stmt->execute([$estado, $id]);
+        }
 }
 ?>

@@ -1,33 +1,26 @@
-<!-- includes/admin-header.php -->
-<?php require_once '../includes/auth.php'; ?>
+<?php require_once '../includes/auth.php'; 
+// Asegurarse de que las constantes estén definidas
+require_once '../config/config.php';
+?>
 
-<div class="top-bar admin-top-bar">
-  <div class="admin-welcome">
-    Hola, <strong><?php echo htmlspecialchars(getAdminEmail()); ?></strong>
+<!-- Barra Superior del Admin -->
+<header class="admin-top-bar">
+  <div class="admin-brand">
+    <img src="<?php echo ASSETS_PATH; ?>img/logo/logo_theveil.png" alt="The Veil Admin" class="brand-logo" />
+    <h2>The Veil Administrador</h2>
   </div>
+
+  <nav class="admin-nav">
+    <a href="dashboard.php">Dashboard</a>
+    <a href="productos.php">Productos</a>
+    <a href="citas.php">Citas</a>
+    <a href="novias.php">Novias</a>
+    <a href="perfil.php">Mi Perfil</a>
+  </nav>
+
   <div class="admin-actions">
-    <a href="../index.php" target="_blank">Ver sitio público</a>
+    <span class="welcome-text">Hola, <strong><?php echo htmlspecialchars(getAdminEmail()); ?></strong></span>
+    <a href="../index.php" target="_blank" class="btn-view-site">Ver sitio público</a>
     <a href="logout.php" class="btn-logout">Cerrar sesión</a>
   </div>
-</div>
-
-<header class="site-header admin-header">
-  <div class="logo-container">
-    <div class="logo-background">
-      <img src="../assets/images/logo-camellia.png" alt="The Veil Admin" class="brand-logo" />
-    </div>
-  </div>
-
-  <nav class="main-nav">
-    <ul>
-      <li><a href="dashboard.php">Dashboard</a></li>
-      <li><a href="productos.php">Gestionar Productos</a></li>
-      <li><a href="citas.php">Gestionar Citas</a></li>
-      <li><a href="novias.php">Novias Registradas</a></li>
-      <li><a href="perfil.php">Mi Perfil</a></li>
-    </ul>
-  </nav>
 </header>
-
-<!-- Línea divisoria -->
-<div class="divider-line"></div>

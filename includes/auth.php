@@ -28,6 +28,7 @@ function getAdminEmail() {
  * Cierra sesión del admin
  */
 function logoutAdmin() {
-    Auth::logout();
+    session_start();
+    session_destroy();
 }
 ?>

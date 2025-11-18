@@ -47,3 +47,106 @@ try {
 
 echo "<hr><p><small>Si todo está bien, deberías ver ✅ en todos los pasos.</small></p>";
 ?>
+
+  //<?php echo ASSETS_PATH; ?> 
+
+
+
+
+
+  //*<!-- Sección Quiénes Somos -->
+        <section class="about-us-section">
+            <div class="container">
+                <div class="about-us-grid">
+                    <div class="about-us-text">
+                        <h2>The Veil</h2>
+                        <p>Nos especializamos en vestidos de novia de alta costura, diseñados con amor y atención al detalle. Ofrecemos colecciones exclusivas inspiradas en la elegancia y la sofisticación.</p>
+                        <a href="quienes_somos.php" class="btn-secondary">Saber Más</a>
+                    </div>
+                    <div class="about-us-image">
+                        <img src="<?php echo ASSETS_PATH; ?>img/inicio/presentacion.jpg" alt="Novia The Veil" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        /* ==================== */
+/* === QUIÉNES SOMOS === */
+/* ==================== */
+
+.about-us-section {
+  padding: 80px 0;
+  background-color: var(--bg-base);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-us-text h2 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+
+.about-us-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+  margin-bottom: 30px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--charcoal);
+  padding: 12px 30px;
+  border: 2px solid var(--charcoal);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--charcoal);
+  color: white;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ==================== */
+/* === RESPONSIVO === */
+/* ==================== */
+
+@media (max-width: 768px) {
+  .hero-content h2 {
+      font-size: 2rem;
+  }
+
+  .about-us-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+  }
+
+  .about-us-text {
+      text-align: center;
+  }
+}

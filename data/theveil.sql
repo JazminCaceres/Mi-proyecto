@@ -78,9 +78,9 @@ INSERT INTO admins (email, password) VALUES (
 
 -- 7. Insertar productos de ejemplo
 INSERT INTO products (name, category, silueta, description, price, image) VALUES
-('Vestido Clásico Diana', 'vestido', 'salón, clásico', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'images/productos/vestido1.jpg'),
-('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'images/productos/zapato1.jpg'),
-('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'images/productos/velo1.jpg');
+('Vestido Clásico Diana', 'vestido', 'salón, clásico', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'img/productos/vestido1.jpg'),
+('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'img/productos/zapato1.jpg'),
+('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'img/productos/velo1.jpg');
 
 -- 8. Índices para rendimiento
 CREATE INDEX idx_novias_email ON novias(email);
