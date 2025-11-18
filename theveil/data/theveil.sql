@@ -57,6 +57,10 @@ CREATE TABLE products (
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     novia_id INT,
+    nombre VARCHAR(100) NULL,
+    apellido VARCHAR(100) NULL,
+    email VARCHAR(100) NULL,
+    telefono VARCHAR(20) NULL,
     fecha_cita DATE NOT NULL,
     hora_cita TIME NOT NULL,
     servicio VARCHAR(50) NOT NULL,
@@ -78,14 +82,18 @@ INSERT INTO admins (email, password) VALUES (
 
 -- 7. Insertar productos de ejemplo
 INSERT INTO products (name, category, silueta, description, price, image) VALUES
-('Vestido Clásico Diana', 'vestido', 'salón, clásico', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'img/productos/vestido1.jpg'),
-('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'img/productos/zapato1.jpg'),
-('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'img/productos/velo1.jpg');
+('Vestido Clásico Diana', 'vestido', 'elegante', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'img/productos/vestido_clasico_diana.jpg'),
+('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'img/productos/stilleto_luna.jpg'),
+('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'img/productos/velo_largo_estela
+.jpg');
 
 -- 8. Índices para rendimiento
 CREATE INDEX idx_novias_email ON novias(email);
 CREATE INDEX idx_appointments_fecha ON appointments(fecha_cita);
 CREATE INDEX idx_products_category ON products(category);
 CREATE INDEX idx_appointments_estado ON appointments(estado);
+-- Nuevos índices para citas anónimas
+CREATE INDEX idx_appointments_email ON appointments(email);
+CREATE INDEX idx_appointments_telefono ON appointments(telefono);
 
 -- Fin del script

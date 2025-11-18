@@ -15,15 +15,15 @@
         <a href="#" class="dropdown-toggle">Accesorios ▾</a>
         <div class="dropdown-content-grid">
           <a href="accesorios.php?tipo=zapatos" class="dropdown-item">
-            <img src="<?=ASSETS_PATH ?>img/productos/zapatos2.jpg" alt="Zapatos" />
+            <img src="<?=ASSETS_PATH ?>img/dropdown/zapato" alt="Zapatos" />
             <span>Zapatos</span>
           </a>
           <a href="accesorios.php?tipo=pendientes" class="dropdown-item">
-            <img src="<?=ASSETS_PATH ?>img/productos/pendiente.jpg" alt="Pendientes" />
+            <img src="<?=ASSETS_PATH ?>img/dropdown/pendiente.jpg" alt="Pendientes" />
             <span>Pendientes</span>
           </a>
           <a href="accesorios.php?tipo=velos" class="dropdown-item">
-            <img src="<?= ASSETS_PATH ?>img/productos/velo2.jpg" alt="Velos" />
+            <img src="<?= ASSETS_PATH ?>img/dropdown/velo.jpg" alt="Velos" />
             <span>Velos</span>
           </a>
         </div>
