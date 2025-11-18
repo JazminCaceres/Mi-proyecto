@@ -15,7 +15,6 @@ require_once '../config/config.php';
     <a href="productos.php">Productos</a>
     <a href="citas.php">Citas</a>
     <a href="novias.php">Novias</a>
-    <a href="perfil.php">Mi Perfil</a>
   </nav>
 
   <div class="admin-actions">
