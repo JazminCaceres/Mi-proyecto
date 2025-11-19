@@ -19,7 +19,6 @@ require_once '../config/config.php';
 
   <div class="admin-actions">
     <span class="welcome-text">Hola, <strong><?php echo htmlspecialchars(getAdminEmail()); ?></strong></span>
-    <a href="../index.php" target="_blank" class="btn-view-site">Ver sitio público</a>
     <a href="logout.php" class="btn-logout">Cerrar sesión</a>
   </div>
 </header>

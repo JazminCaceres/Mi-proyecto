@@ -76,9 +76,9 @@ CREATE TABLE appointments (
 -- 6. Insertar administrador por defecto
 INSERT INTO admins (email, password) VALUES (
     'admin@theveil.com',
-    '$2y$10$K9dUZvQx1Y4ZzJqW8wXtOeGmHjNl6pRrT.sSsT7VvC3qY1Z2J0Pq'
+    '$2y$10$Dgt5ZFq1DSKf.D68yZ5NFeEEEycwW8./UByJxGkZjvQRbIvmpXbtC'
 );
--- Contraseña: admin123 (hash generado con password_hash)
+-- Contraseña: admin12345 (hash generado con password_hash)
 
 -- 7. Insertar productos de ejemplo
 INSERT INTO products (name, category, silueta, description, price, image) VALUES
