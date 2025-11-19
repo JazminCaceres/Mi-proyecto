@@ -2154,6 +2154,36 @@ box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.1);
   }
 }
 
+/*agregar producto */
+.form-group label,
+    .form-group input,
+    .form-group select,
+    .form-group textarea,
+    .form-group button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select,
+    .form-group textarea {
+      padding: 8px;
+      border: 1px solid var(--gray-pearl);
+      border-radius: 5px;
+    }
+
+    .btn-back {
+      background: #6c757d;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
 
 /*editar producto*/
 

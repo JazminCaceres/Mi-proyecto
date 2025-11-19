@@ -79,37 +79,8 @@ if ($_POST) {
 <head>
   <meta charset="UTF-8" />
   <title>Agregar Producto - The Veil Admin</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <style>
-    .form-group label,
-    .form-group input,
-    .form-group select,
-    .form-group textarea,
-    .form-group button {
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-    }
+  <link rel="stylesheet" href="<?php echo ASSETS_PATH; ?>css/style.css" />
 
-    .form-group input[type="text"],
-    .form-group input[type="number"],
-    .form-group select,
-    .form-group textarea {
-      padding: 8px;
-      border: 1px solid var(--gray-pearl);
-      border-radius: 5px;
-    }
-
-    .btn-back {
-      background: #6c757d;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-      display: inline-block;
-    }
-  </style>
 </head>
 <body>
 

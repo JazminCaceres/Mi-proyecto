@@ -82,9 +82,9 @@ INSERT INTO admins (email, password) VALUES (
 
 -- 7. Insertar productos de ejemplo
 INSERT INTO products (name, category, silueta, description, price, image) VALUES
-('Vestido Clásico Diana', 'vestido', 'elegante', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'img/productos/vestido_clasico_diana.jpg'),
-('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'img/productos/stilleto_luna.jpg'),
-('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'img/productos/velo_largo_estela
+('Vestido Clásico Diana', 'vestido', 'elegante', 'Elegante vestido con encaje francés y cola corta.', 850.00, 'assets/img/productos/vestido_elegante_diana.jpg'),
+('Zapatos Stilettos Luna', 'accesorio', 'stilettos', 'Tacones altos con detalles dorados y punta abierta.', 150.00, 'assets/img/productos/stilleto_luna.jpg'),
+('Velos Románticos Estela', 'accesorio', 'velo largo', 'Par de velos: corte bobo y largo hasta el suelo.', 90.00, 'assets/img/productos/velo_largo_estela
 .jpg');
 
 -- 8. Índices para rendimiento
